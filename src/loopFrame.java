@@ -126,12 +126,22 @@ public class loopFrame extends javax.swing.JFrame {
                 
         int sNum = Integer.parseInt(startNum.getText());
         int eNum = Integer.parseInt(endingNum.getText());
-        int length = eNum - sNum;
+        //int length = eNum - sNum;
+        String count = "";
         
-        for (int i = sNum; i <= length; i++)
-        {
-            output.setText(Integer.toString(i));
+        if (sNum<eNum){
+            for (int i = sNum; i <= eNum; i++)
+            {
+                count += i + " ";
+            }
         }
+        else
+            for (int i = sNum; i >= eNum; i--)
+            {
+                count += i + " ";
+            }
+        
+        output.setText(count);
     }//GEN-LAST:event_calculateActionPerformed
 
     /**
