@@ -126,7 +126,7 @@ public class loopFrame extends javax.swing.JFrame {
                 
         int sNum = Integer.parseInt(startNum.getText());
         int eNum = Integer.parseInt(endingNum.getText());
-        //int length = eNum - sNum;
+        
         String count = "";
         
         if (sNum<eNum){
